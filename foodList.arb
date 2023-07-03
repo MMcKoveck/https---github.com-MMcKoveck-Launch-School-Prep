@@ -1,0 +1,14 @@
+puts "list some foods: "
+text = gets.chomp
+puts "choose your least favorite: "
+redact = gets.chomp
+
+words = text.split (" ")
+words.each do |food|
+  if food != redact
+    puts "I like #{food} too. "
+  else puts "Yeah, that's gross! "
+  end  
+end  
+
+

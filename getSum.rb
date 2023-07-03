@@ -1,0 +1,32 @@
+=begin  The code below asks the user "What does 2 + 2 equal?" 
+and uses #gets to retrieve the user's answer. 
+Modify the code so "That's correct!" is printed and the loop stops when the user's answer equals 4. 
+Print "Wrong answer. Try again!" if the user's answer doesn't equal 4.
+=end
+=begin sample
+loop do
+  puts "What does 2 + 2 equal?"
+  answer = gets.chomp.to_i
+end
+=end
+loop do
+  puts "What does 2 + 2 equal?"
+  answer = gets.chomp.to_i
+  if answer == 4 
+    puts "That's correct!"
+    break
+  else # APPARENTLY YOU DON"T EVEN NEED AN ELSE HERE. CAN PUT END HERE AND THE OTHER PUTS GOES ANYWAY
+    puts "Wrong answer. Try again!"
+  end
+end
+# THE GIVEN ANSWER IS A LITTLE MORE CONCISE
+loop do
+  puts "What does 2 + 2 equal?"
+  answer = gets.chomp.to_i
+  if answer == 4 
+    puts "That's correct!"
+    break
+  end
+
+  puts "Wrong answer. Try again!"
+end
